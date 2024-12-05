@@ -1,0 +1,12 @@
+Solutie Bruta - 50p 
+
+Pentru fiecare prognoza se updateaza vectorul initial si se verifica daca toate zonele sunt mai mici ca k. Cand gasim solutia o 
+afisam si oprim programul.
+
+Solutie oficiala - 100p
+
+Se cauta binar(l, r, mij) numarul de prognoze dupa care toate zonele sunt mai mici decat k. Pentru a calcula cu cat scade fiecare zona pentru un
+pas din cautare, se va folosi smenul lui mars pe un alt vector, pentru a procesa cu cat scade zapada in fiecare zona in complexitate O(N). 
+Dupa aceea se parcurge fiecare element din vector si se scade valoarea din smen din el pentru a afla inaltimea acelei zone dupa mij prognoze,
+unde mij este pasul cautarii binare. Daca solutia este valida r devine mij - 1, iar daca nu, avem nevoie de mai multe prognoze, deci l creste 
+la mij + 1. 

@@ -1,0 +1,56 @@
+Cerință
+
+Gigel pleacă în vacanță cu familia la schi!! Din pă cate , pârtia nu este sigură pentru a schia, pericolul de avalanșă fiind ridicat. 
+Pârtia poate fi marcată drept n zone, fiecare dintre numere reprezentând înălțimea zăpezii într-o anumită zonă. 
+Se dau m prognoze meteo de tipul ( st , dr, q), însemnând că în toate zonele de la st la dr înălțimea zăpezii scade cu q metrii.
+Pârtia este considerată sigură atunci când înălțimea zăpezii în toate zonele este mai mică sau egală cu un număr k dat. 
+Ajutați-l pe gigel să afle după câte prognoze este pârtia sigură pentru a schia.
+
+Date de intrare ("ski.in")
+
+Se citesc numerele n, m, k reprezentând numărul de zone, numărul de prognoze meteo, respectiv înălțimea maximă pe care zăpada
+o poate avea pentru ca o zonă să fie considerată sigură. 
+Pe următoarea linie se dau n numere, reprezentând înălțimea zăpezii în acea zonă. 
+Pe următoarele m linii se află câte un triplet ( st , dr, q), reprezentând datele pentru o prognoza meteo.
+
+Date de ieșire ("ski.out")
+
+Se va afișa numărul minim de prognoze după care toate zonele sunt sigure pentru a schia.
+
+Restricții și precizări
+n <= 500.000
+m <= 500.000
+1 <= k <= 1.000.000
+1 <= q <= 4.000
+1 <= zona[i] <= 1.000.000.000
+1 <= st <= dr <= n
+
+
+Exemplu
+
+ski.in
+10 5 4
+3 3 4 4 5 4 9 8 11 1
+2 3 1
+7 9 6
+9 9 2
+5 7 1
+1 10 1
+
+ski.out
+4
+
+Explicație:
+După prima prognoză:
+3 2 3 4 5 4 9 8 11 1
+După a doua prognoză:
+3 2 3 4 5 4 3 2 5 1
+După a treia prognoză:
+3 2 3 4 5 4 3 2 3 1
+După a patra prognoză:
+3 2 3 4 4 3 2 2 3 1
+După a cincea prognoză:
+2 1 2 3 3 2 1 1 2 0
+
+Observăm că a durat patru prognoze ca toate zonele să aibă valoarea mai mică sau egală cu 4.
+Prin urmare răspunsul este 4.
