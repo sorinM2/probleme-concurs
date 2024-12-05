@@ -4,7 +4,7 @@ ifstream fin ("bellingham.in");
 ofstream fout ("bellingham.out");
 
 
-const int MAXN=510;
+const int MAXN=1001;
 
 int c,n,a[MAXN];
 
