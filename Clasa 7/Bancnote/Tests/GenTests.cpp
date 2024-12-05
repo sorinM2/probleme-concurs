@@ -69,6 +69,7 @@ ll c, n, ans, k, st, dr;
 vector<int> sol;
 void Generate(std::string FileName)
 {
+    sol.clear();
     std::ofstream Intrare("TestsOutput\\" + FileName + ".in");
     std::ofstream Iesire("TestsOutput\\" + FileName + ".ok");
 

@@ -1,8 +1,8 @@
 ///BRUT
 #include <bits/stdc++.h>
 using namespace std;
-ifstream fin ("ciurulica.in");
-ofstream fout ("ciurulica.out");
+ifstream fin ("andrei.in");
+ofstream fout ("andrei.out");
 
 bool prim (int x){
     if (x<2) return 0;

@@ -71,6 +71,9 @@ void Generate(std::string FileName)
     std::ofstream Intrare("TestsOutput\\" + FileName + ".in");
     std::ofstream Iesire("TestsOutput\\" + FileName + ".ok");
 
+    for ( int i = 1; i <= 9; ++i )
+        f[i] = 0;
+    s = 0;
     std::cout << "C: ";
     std::cin >> c;
     std::cout << "N: ";

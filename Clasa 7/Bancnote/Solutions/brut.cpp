@@ -29,7 +29,7 @@ int main()
         }
     }
     fout<<sol.size()<<'\n';
-    if (c==2){
+    if (c==1){
         for (auto i:sol){
             fout<<i<<' ';
         }

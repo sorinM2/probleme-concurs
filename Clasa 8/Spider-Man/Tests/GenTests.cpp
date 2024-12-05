@@ -78,7 +78,8 @@ void Generate(std::string FileName)
     std::cout << "Inaltime maxima cladire: ";
     std::cin >> h;
     Intrare << n << std::endl;
-
+    for ( int i = 1; i <= n; ++i )
+        l[i] = r[i] = 0;
     for (int i=1;i<=n;++i){
         pair<int, int> x;
         x.first = Random(h);
