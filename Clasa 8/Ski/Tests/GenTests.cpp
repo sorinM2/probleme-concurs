@@ -126,7 +126,7 @@ void Generate(std::string FileName)
     int OpUtile = m - OpInutile - 1;
     std::vector<int> a(n + 1, 0);
     for ( int i = 1; i <= n; ++i )
-        a[i] = Random(OpMax);
+        a[i] = Random(10);
 
     ///////////////////////////////////////////////////////////
     ResetMars(n);
